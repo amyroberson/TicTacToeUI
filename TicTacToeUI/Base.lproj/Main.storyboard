@@ -35,19 +35,28 @@
                                         <rect key="frame" x="0.0" y="0.0" width="360" height="106.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFL-KC-suS" userLabel="topLeft">
-                                                <rect key="frame" x="0.0" y="38.5" width="120" height="30"/>
+                                                <rect key="frame" x="0.0" y="23.5" width="120" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="3xR-Hk-TL2"/>
+                                                </constraints>
                                                 <connections>
                                                     <action selector="selectSpot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G8z-cD-Rxr"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ut4-D2-ZYb" userLabel="topMiddle">
-                                                <rect key="frame" x="120" y="38.5" width="120" height="30"/>
+                                                <rect key="frame" x="120" y="23.5" width="120" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="BDn-7P-zgz"/>
+                                                </constraints>
                                                 <connections>
                                                     <action selector="selectSpot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="93T-P1-Zlh"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7w-WB-xlc" userLabel="topRight">
-                                                <rect key="frame" x="240" y="38.5" width="120" height="30"/>
+                                                <rect key="frame" x="240" y="23.5" width="120" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="uti-Yt-O4P"/>
+                                                </constraints>
                                                 <connections>
                                                     <action selector="selectSpot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3QI-2W-8Uq"/>
                                                 </connections>
@@ -61,19 +70,28 @@
                                         <rect key="frame" x="0.0" y="126.5" width="360" height="107"/>
                                         <subviews>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cE2-gu-rey" userLabel="middleLeft">
-                                                <rect key="frame" x="0.0" y="38.5" width="120" height="30"/>
+                                                <rect key="frame" x="0.0" y="23.5" width="120" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="FaK-t0-9J8"/>
+                                                </constraints>
                                                 <connections>
                                                     <action selector="selectSpot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xwR-cV-ci3"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgF-Js-1UK" userLabel="middleMiddle">
-                                                <rect key="frame" x="120" y="38.5" width="120" height="30"/>
+                                                <rect key="frame" x="120" y="23.5" width="120" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="bdP-hN-39f"/>
+                                                </constraints>
                                                 <connections>
                                                     <action selector="selectSpot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mKC-0t-dAG"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2F-n9-fnh" userLabel="middleRight">
-                                                <rect key="frame" x="240" y="38.5" width="120" height="30"/>
+                                                <rect key="frame" x="240" y="23.5" width="120" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="ZBl-Xm-GUy"/>
+                                                </constraints>
                                                 <connections>
                                                     <action selector="selectSpot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="crP-Dk-SId"/>
                                                 </connections>
@@ -87,19 +105,28 @@
                                         <rect key="frame" x="0.0" y="253.5" width="360" height="106.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUI-dD-4AE" userLabel="bottomLeft">
-                                                <rect key="frame" x="0.0" y="38" width="120" height="30"/>
+                                                <rect key="frame" x="0.0" y="23" width="120" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="jla-RA-DFq"/>
+                                                </constraints>
                                                 <connections>
                                                     <action selector="selectSpot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Xp-3w-T01"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AfZ-Su-4O5" userLabel="bottomMiddle">
-                                                <rect key="frame" x="120" y="38" width="120" height="30"/>
+                                                <rect key="frame" x="120" y="23" width="120" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="qvL-ZB-wVT"/>
+                                                </constraints>
                                                 <connections>
                                                     <action selector="selectSpot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aQh-aR-AJx"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAE-sQ-tPy" userLabel="bottomRight">
-                                                <rect key="frame" x="240" y="38" width="120" height="30"/>
+                                                <rect key="frame" x="240" y="23" width="120" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="MD4-BJ-Sfe"/>
+                                                </constraints>
                                                 <connections>
                                                     <action selector="selectSpot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8yE-rl-BEq"/>
                                                 </connections>

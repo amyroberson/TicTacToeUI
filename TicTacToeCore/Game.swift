@@ -104,23 +104,29 @@ public  class Game: NSObject, NSCoding {
     
     override public var description: String
     {
-        return " \(self[0,0].toString()) | \(self[0,1].toString()) | \(self[0,2].toString())\n --------- \n \(self[1,0].toString()) | \(self[1,1].toString()) | \(self[1,2].toString()) \n --------- \n \(self[2,0].toString()) | \(self[2,1].toString()) | \(self[2,2].toString())"
+        do {
+        return " \(try get(row: 0, column: 0).toString()) | \(try get(row: 0, column: 1).toString()) | \(try get(row: 0, column: 2).toString()) \n --------- \n \(try get(row: 1, column: 0).toString()) | \(try get(row: 1, column: 1).toString()) | \(try get(row: 1, column: 2).toString()) \n --------- \n \(try get(row: 2, column: 0).toString()) | \(try get(row: 2, column: 1).toString()) | \(try get(row: 2, column: 2).toString()) "
+        } catch {
+            return "Error occured!"
+        }
     }
     
-    public subscript(row: Int, column: Int) -> Marker {
+    public subscript(row: Int, column: Int) -> Marker? {
         get {
             do{
                 return try self.get(row: row, column: column)
             }catch {
-                fatalError() // can not throw from subscript
+                return nil
             }
         }
         
         set {
             do{
-                try self.add(marker: newValue, at: (row: row, column: column))
+                if let marker = newValue {
+                try self.setSpot(marker: marker, at: (row: row, column: column))
+                }
             }catch {
-                fatalError()  // can not throw from subscript
+                fatalError()
             }
         }
     }
@@ -133,7 +139,7 @@ public  class Game: NSObject, NSCoding {
         }
     }
     
-    func add(marker: Marker, at: (row: Int, column: Int)) throws {
+    func setSpot(marker: Marker, at: (row: Int, column: Int)) throws {
         if (at.row < rows && at.row > -1) &&
             (at.column < columns && at.column > -1) {
             grid[(at.row * columns) + at.column] = marker

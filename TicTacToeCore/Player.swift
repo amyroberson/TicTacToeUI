@@ -16,7 +16,6 @@ public class Player: NSObject, NSCoding {
     public fileprivate(set) var numberOfLosses: Int
     override public var description: String {
         return self.name
-
     }
     
     public convenience init(name: String, mark: Marker){

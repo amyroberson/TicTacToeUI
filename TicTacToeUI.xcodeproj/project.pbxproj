@@ -28,6 +28,7 @@
 		E16613B41E1D7727003968AC /* MethodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16613B21E1D7727003968AC /* MethodsTests.swift */; };
 		E16613B51E1D7727003968AC /* FileInteractionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16613B31E1D7727003968AC /* FileInteractionTests.swift */; };
 		E16613B71E1D857D003968AC /* GetPlayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16613B61E1D857D003968AC /* GetPlayers.swift */; };
+		E16613B91E1DB118003968AC /* GameMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16613B81E1DB118003968AC /* GameMethodTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		E16613B21E1D7727003968AC /* MethodsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodsTests.swift; sourceTree = "<group>"; };
 		E16613B31E1D7727003968AC /* FileInteractionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileInteractionTests.swift; sourceTree = "<group>"; };
 		E16613B61E1D857D003968AC /* GetPlayers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPlayers.swift; sourceTree = "<group>"; };
+		E16613B81E1DB118003968AC /* GameMethodTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameMethodTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +233,7 @@
 				E14E3C041E1D5A5300376B91 /* TicTacToeCoreTests.swift */,
 				E16613B21E1D7727003968AC /* MethodsTests.swift */,
 				E16613B31E1D7727003968AC /* FileInteractionTests.swift */,
+				E16613B81E1DB118003968AC /* GameMethodTests.swift */,
 				E14E3C061E1D5A5300376B91 /* Info.plist */,
 			);
 			path = TicTacToeCoreTests;
@@ -492,6 +495,7 @@
 			files = (
 				E16613B41E1D7727003968AC /* MethodsTests.swift in Sources */,
 				E14E3C051E1D5A5300376B91 /* TicTacToeCoreTests.swift in Sources */,
+				E16613B91E1DB118003968AC /* GameMethodTests.swift in Sources */,
 				E16613B51E1D7727003968AC /* FileInteractionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

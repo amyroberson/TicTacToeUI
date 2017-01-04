@@ -45,15 +45,15 @@ public class TicTacToeViewController: UIViewController {
     
     
     func Update(){
-        topLeft.setTitle(game[0,0].toString(), for: .normal)
-        topMiddle.setTitle(game[0,1].toString(), for: .normal)
-        topRight.setTitle(game[0,2].toString(), for: .normal)
-        middleLeft.setTitle(game[1,0].toString(), for: .normal)
-        middleMiddle.setTitle(game[1,1].toString(), for: .normal)
-        middleRight.setTitle(game[1,2].toString(), for: .normal)
-        bottomLeft.setTitle(game[2,0].toString(), for: .normal)
-        bottomMiddle.setTitle(game[2,1].toString(), for: .normal)
-        bottomRight.setTitle(game[2,2].toString(), for: .normal)
+        topLeft.setTitle(game[0,0]?.toString(), for: .normal)
+        topMiddle.setTitle(game[0,1]?.toString(), for: .normal)
+        topRight.setTitle(game[0,2]?.toString(), for: .normal)
+        middleLeft.setTitle(game[1,0]?.toString(), for: .normal)
+        middleMiddle.setTitle(game[1,1]?.toString(), for: .normal)
+        middleRight.setTitle(game[1,2]?.toString(), for: .normal)
+        bottomLeft.setTitle(game[2,0]?.toString(), for: .normal)
+        bottomMiddle.setTitle(game[2,1]?.toString(), for: .normal)
+        bottomRight.setTitle(game[2,2]?.toString(), for: .normal)
         playerTurnLabel.text = game.getCurrentPlayer().description
         if game.isGameOver(){
             gameOutComeLabel.text = game.gameOutCome.description
