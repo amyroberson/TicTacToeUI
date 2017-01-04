@@ -122,6 +122,11 @@ class GameMethodsTests: XCTestCase {
         let p2 = Player(name: "you", mark: .o)
         let x = Game(player1:p1 ,player2:p2)
         XCTAssertEqual(x[0,0]!, .empty)
+        x[1,2] = .x
+        XCTAssertEqual(x[1,2]!, .x)
+        x[0,0] = .o
+        XCTAssertEqual(x[0,0]!, .o)
+        
     }
     
     func testGet(){
