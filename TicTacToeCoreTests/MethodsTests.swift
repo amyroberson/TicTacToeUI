@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import TicTacToeFiles
+@testable import TicTacToeCore
 
 class MethodsTests: XCTestCase {
 
@@ -444,7 +444,7 @@ class MethodsTests: XCTestCase {
         let p1 = Player(name: "me", mark: .x)
         let p2 = Player(name: "you", mark: .o)
         let game = Game(player1: p1, player2: p2)
-        let expected = Game(lastPlayed: .x, grid: [.empty, .empty, .empty, .empty, .x, .empty, .empty, .empty, .empty], player1: p1, player2: p2, gameOutCome: nil)
+        let expected = Game(lastPlayed: .x, grid: [.empty, .empty, .empty, .empty, .x, .empty, .empty, .empty, .empty], player1: p1, player2: p2, gameOutCome: .none)
         do{
             try game.add(marker: .x, at: (row:1, column: 1))
         } catch {

@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import TicTacToeFiles
+@testable import TicTacToeCore
 
 class FileInteractionTests: XCTestCase {
 

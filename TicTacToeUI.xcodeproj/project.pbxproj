@@ -27,6 +27,7 @@
 		E16613B11E1D7716003968AC /* FileInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16613AB1E1D7716003968AC /* FileInteraction.swift */; };
 		E16613B41E1D7727003968AC /* MethodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16613B21E1D7727003968AC /* MethodsTests.swift */; };
 		E16613B51E1D7727003968AC /* FileInteractionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16613B31E1D7727003968AC /* FileInteractionTests.swift */; };
+		E16613B71E1D857D003968AC /* GetPlayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16613B61E1D857D003968AC /* GetPlayers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		E16613AB1E1D7716003968AC /* FileInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileInteraction.swift; sourceTree = "<group>"; };
 		E16613B21E1D7727003968AC /* MethodsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodsTests.swift; sourceTree = "<group>"; };
 		E16613B31E1D7727003968AC /* FileInteractionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileInteractionTests.swift; sourceTree = "<group>"; };
+		E16613B61E1D857D003968AC /* GetPlayers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPlayers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				E14E3BC91E1D59B800376B91 /* Assets.xcassets */,
 				E14E3BCB1E1D59B800376B91 /* LaunchScreen.storyboard */,
 				E14E3BCE1E1D59B800376B91 /* Info.plist */,
+				E16613B61E1D857D003968AC /* GetPlayers.swift */,
 			);
 			path = TicTacToeUI;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E16613B71E1D857D003968AC /* GetPlayers.swift in Sources */,
 				E14E3BC51E1D59B800376B91 /* TicTacToeViewController.swift in Sources */,
 				E14E3BC31E1D59B800376B91 /* AppDelegate.swift in Sources */,
 			);

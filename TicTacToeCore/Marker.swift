@@ -8,12 +8,12 @@
 
 import Foundation
 
-enum Marker{
+public  enum Marker{
     case x
     case o
     case empty
     
-    func toString() -> String {
+    public func toString() -> String {
         switch self{
         case .x:
             return "X"

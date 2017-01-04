@@ -9,13 +9,17 @@
 import Foundation
 
 
-class Player: NSObject, NSCoding {
-    let marker: Marker
-    let name: String
-    var numberOfWins : Int
-    var numberOfLosses: Int
+public class Player: NSObject, NSCoding {
+    public let marker: Marker
+    public let name: String
+    public fileprivate(set) var numberOfWins : Int
+    public fileprivate(set) var numberOfLosses: Int
+    override public var description: String {
+        return self.name
+
+    }
     
-    convenience init(name: String, mark: Marker){
+    public convenience init(name: String, mark: Marker){
         self.init(name:name, mark:mark, numberOfWins: 0, numberOfLosses: 0)
     }
     
@@ -27,7 +31,7 @@ class Player: NSObject, NSCoding {
     }
     
     //MARK: NSCoding
-    required convenience init?(coder decoder: NSCoder) {
+    required convenience public init?(coder decoder: NSCoder) {
         var marker: Marker
         let tmp = decoder.decodeObject(forKey: "marker") as? String
         if tmp == "x" {
@@ -47,7 +51,7 @@ class Player: NSObject, NSCoding {
         )
     }
     
-    func encode(with coder: NSCoder) {
+    public func encode(with coder: NSCoder) {
         coder.encode(self.name, forKey: "name")
         var tmp: String
         if self.marker == .x {
@@ -62,7 +66,7 @@ class Player: NSObject, NSCoding {
         coder.encode(self.numberOfLosses, forKey: "numberOfLosses")
     }
     
-    static func ==(_ lhs: Player, _ rhs: Player) -> Bool{
+    public static func ==(_ lhs: Player, _ rhs: Player) -> Bool{
         return lhs.name == rhs.name && lhs.marker == rhs.marker && lhs.numberOfWins == rhs.numberOfWins
         
     }

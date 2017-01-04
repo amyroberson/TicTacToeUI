@@ -8,13 +8,16 @@
 
 import Foundation
 
-enum GameOutcome: CustomStringConvertible {
+public enum GameOutcome: CustomStringConvertible {
     case player1Wins
     case player2Wins
     case draw
+    case none
     
-    var description: String {
+    public var description: String {
         switch self{
+        case .none:
+            return ""
         case .player1Wins:
             return "player1Wins"
         case .player2Wins:
@@ -23,4 +26,5 @@ enum GameOutcome: CustomStringConvertible {
             return "draw"
         }
     }
+    
 }
