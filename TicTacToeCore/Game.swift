@@ -121,12 +121,13 @@ public  class Game: NSObject, NSCoding {
         }
         
         set {
+            
             do{
                 if let marker = newValue {
                 try self.setSpot(marker: marker, at: (row: row, column: column))
                 }
             }catch {
-                fatalError()
+                print("")
             }
         }
     }
@@ -141,7 +142,7 @@ public  class Game: NSObject, NSCoding {
     
     func setSpot(marker: Marker, at: (row: Int, column: Int)) throws {
         if (at.row < rows && at.row > -1) &&
-            (at.column < columns && at.column > -1) {
+           (at.column < columns && at.column > -1) {
             grid[(at.row * columns) + at.column] = marker
         } else {
             throw BoardError.notOnBoard

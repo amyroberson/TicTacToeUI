@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,18 +19,18 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TicTacToe" translatesAutoresizingMaskIntoConstraints="NO" id="wgc-lY-uJi">
-                                <rect key="frame" x="7.5" y="153.5" width="360" height="360"/>
+                                <rect key="frame" x="287" y="7.5" width="360" height="360"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="360" id="GwJ-k3-QJn"/>
                                     <constraint firstAttribute="width" constant="360" id="U9E-WQ-3z1"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CWb-KA-ZVX">
-                                <rect key="frame" x="7.5" y="153.5" width="360" height="360"/>
+                                <rect key="frame" x="287" y="7.5" width="360" height="360"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tWC-0f-UW5">
                                         <rect key="frame" x="0.0" y="0.0" width="360" height="106.5"/>
@@ -39,6 +40,10 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="3xR-Hk-TL2"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="35"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="selectSpot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G8z-cD-Rxr"/>
                                                 </connections>
@@ -48,6 +53,10 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="BDn-7P-zgz"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="35"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="selectSpot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="93T-P1-Zlh"/>
                                                 </connections>
@@ -57,6 +66,10 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="uti-Yt-O4P"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="35"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="selectSpot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3QI-2W-8Uq"/>
                                                 </connections>
@@ -74,6 +87,10 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="FaK-t0-9J8"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="35"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="selectSpot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xwR-cV-ci3"/>
                                                 </connections>
@@ -83,6 +100,10 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="bdP-hN-39f"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="35"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="selectSpot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mKC-0t-dAG"/>
                                                 </connections>
@@ -92,6 +113,10 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="ZBl-Xm-GUy"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="35"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="selectSpot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="crP-Dk-SId"/>
                                                 </connections>
@@ -109,6 +134,10 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="jla-RA-DFq"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="35"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="selectSpot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Xp-3w-T01"/>
                                                 </connections>
@@ -118,6 +147,10 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="qvL-ZB-wVT"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="35"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="selectSpot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aQh-aR-AJx"/>
                                                 </connections>
@@ -127,6 +160,10 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="MD4-BJ-Sfe"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="35"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="selectSpot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8yE-rl-BEq"/>
                                                 </connections>
@@ -143,29 +180,63 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Player's Turn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pC1-zz-cbU">
-                                <rect key="frame" x="119.5" y="70" width="136" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="70" y="70" width="173.5" height="23"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ths-gQ-L6r">
-                                <rect key="frame" x="187.5" y="607" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="156.5" y="315" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="pC1-zz-cbU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="8sQ-lE-EkN"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ths-gQ-L6r" secondAttribute="bottom" constant="60" id="Foi-X9-cnO"/>
                             <constraint firstItem="CWb-KA-ZVX" firstAttribute="centerX" secondItem="wgc-lY-uJi" secondAttribute="centerX" id="Rpp-IV-pEz"/>
+                            <constraint firstItem="ths-gQ-L6r" firstAttribute="centerX" secondItem="pC1-zz-cbU" secondAttribute="centerX" id="TcG-VZ-phy"/>
                             <constraint firstItem="pC1-zz-cbU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="Voi-bB-yXv"/>
                             <constraint firstItem="wgc-lY-uJi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WCi-kR-Xqb"/>
                             <constraint firstItem="pC1-zz-cbU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bD0-ld-drw"/>
                             <constraint firstItem="CWb-KA-ZVX" firstAttribute="centerY" secondItem="wgc-lY-uJi" secondAttribute="centerY" id="c0J-vi-B1x"/>
-                            <constraint firstItem="wgc-lY-uJi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jxF-5v-ZOz"/>
+                            <constraint firstItem="wgc-lY-uJi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="njs-Mk-Icq"/>
+                            <constraint firstItem="wgc-lY-uJi" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="nlY-tu-ft1"/>
                             <constraint firstItem="ths-gQ-L6r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pes-JI-BFI"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8sQ-lE-EkN"/>
+                                <exclude reference="bD0-ld-drw"/>
+                                <exclude reference="WCi-kR-Xqb"/>
+                                <exclude reference="nlY-tu-ft1"/>
+                                <exclude reference="pes-JI-BFI"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="8sQ-lE-EkN"/>
+                                <include reference="nlY-tu-ft1"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="bD0-ld-drw"/>
+                                <include reference="WCi-kR-Xqb"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Foi-X9-cnO"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="pes-JI-BFI"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="bottomLeft" destination="wUI-dD-4AE" id="D5d-0S-JAp"/>
